@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+/backend/.env  # 非常重要！
+/backend/venv/
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+backend/blog.db
+# Data folder specific ignores
+/data/blog/temp_uploads/
+/data/temp_uploads/
+# 根据您的实际使用情况决定是否忽略以下内容：
+# /data/blog/uploaded_images/
+# /data/uploaded_images/
+
+# 其他您确认需要忽略的文件或文件夹

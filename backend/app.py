@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv # <<<< 新增导入
 load_dotenv() # <<<< 新增：在其他导入之前加载 .env 文件中的环境变量
 from flask import Flask, jsonify, request, send_from_directory, redirect, url_for,render_template_string # 确保 send_from_directory, redirect, url_for 已导入
 from markdown import markdown
@@ -17,7 +18,7 @@ from urllib.parse import urlparse, urljoin # For secure redirection
 from sqlalchemy import MetaData # NEW: For naming convention
 from flask_migrate import Migrate # Make sure this import is at the top
 from sqlalchemy import func
-from dotenv import load_dotenv # <<<< 新增导入
+
 
 
 
